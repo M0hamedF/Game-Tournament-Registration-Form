@@ -1,125 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head> 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="img/iconmonstr-banknote-15.svg" />     
-    <div>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-         <!-- Bootstrap Html & CSS -->
-    
-            <!-- Optional JavaScript; choose one of the two! -->
-        
-            <!-- Option 1: Bootstrap Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-            <!-- Option 2: Separate Popper and Bootstrap JS -->
-            <!--
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-            -->
-         <!-- Bootstrap javascript --></div>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
+    <!-- Favicons -->
+    <link href="assets/img/database.png" rel="icon">
+    <!-- Title -->
+    <title>Reg sheet</title>
+    <!-- Bootstrap Html & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(assets/img/BG.jpg);
+        }
+    </style>
+</head>
 
-         <style>
-           .text-center {
-  text-align: center;
-}
-body{
-    background-image: url(Pic/BG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    background-attachment: fixed;
-}
-p,h3,h5,label{
-    color: white;
-}
-         </style>
-  </head>
+<body>
+    <form action="process.php" method="POST">
+        <div class="card" style="background-image: url(assets/img/BG1.jpg);">
+            <div class="card-header">
+                <h3>Registration Form</h3>
+            </div>
+            <div class="card-body">
+                <!-- Team Name -->
+                <div class="mb-3 colom">
+                    <label for="name" class="col-sm-2 col-form-label">Team Name</label>
+                    <div class="size"><input type="text" class="form-control" name="team-name" required></div>
+                </div>
+                <!-- Team Coach -->
+                <div class="mb-3 colom">
+                    <label for="team-coach" class="col-sm-2 col-form-label">Team Coach</label>
+                    <div class="size"><input type="text" class="form-control" name="team-coach" required></div>
+                </div>
+                <!-- Region -->
+                <div class="mb-3 colom">
+                    <label for="region" class="col-sm-2 col-form-label">Region</label>
+                    <div class="size"><input type="text" class="form-control" name="region" required></div>
+                </div>
+                <!-- Team Logo -->
+                <div class="mb-3 colom">
+                    <label for="region" class="col-sm-2 col-form-label">Team Logo</label>
+                    <div class="size"><input type="file" class="form-control" name="team-logo" required></div>
+                </div>
+                <!-- Player 1 -->
+                <div class="mb-3 colom">
+                    <label for="player-1" class="col-sm-2 col-form-label">Player 1</label>
+                    <div class="size"><input type="text" class="form-control" name="player-1" required></div>
+                </div>
+                <!-- Player 2 -->
+                <div class="mb-3 colom">
+                    <label for="player-2" class="col-sm-2 col-form-label">Player 2</label>
+                    <div class="size"><input type="text" class="form-control" name="player-2" required></div>
+                </div>
+                <!-- Player 3 -->
+                <div class="mb-3 colom">
+                    <label for="player-3" class="col-sm-2 col-form-label">Player 3</label>
+                    <div class="size"><input type="text" class="form-control" name="player-3" required></div>
+                </div>
+                <!-- Player 4 -->
+                <div class="mb-3 colom">
+                    <label for="player-4" class="col-sm-2 col-form-label">Player 4</label>
+                    <div class="size"><input type="text" class="form-control" name="player-4" required></div>
+                </div>
+                <!-- Player 5 -->
+                <div class="mb-3 colom">
+                    <label for="player-5" class="col-sm-2 col-form-label">Player 5</label>
+                    <div class="size"><input type="text" class="form-control" name="player-5" required></div>
+                </div>
+                <!-- Games -->
+                <div class="box">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="league-of-legends" value="in">
+                        <label class="form-check-label" for="league-of-legends">
+                            League of Legends
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="call-of-duty" value="in">
+                        <label class="form-check-label" for="call-of-duty">
+                            Call of Duty
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="overwatch" value="in">
+                        <label class="form-check-label" for="overwatch">
+                            Overwatch
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dota-2" value="in">
+                        <label class="form-check-label" for="Dota-2">
+                            Dota 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="valorant" value="in">
+                        <label class="form-check-label" for="valorant">
+                            Valorant
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="heroes-of-the-storm" value="in">
+                        <label class="form-check-label" for="heroes-of-the-storm">
+                            Heroes of the Storm
+                        </label>
+                    </div>
+                </div>
+                <!-- Comments -->
+                <div class="form-floating comment">
+                    <textarea class="form-control" style="height: 100px" name="comments"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <!-- Button -->
+                <div class="button">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
 
-  <body >
-  <form action="server.php" method="post">
-  <div class="card" style="margin-bottom: 30px; background-image: url(Pic/BG1.jpg);">
-  <h3 style="margin-top: 20px; margin-bottom:30px;">Gaming Tournament Registration Form</h3>
-  <div class="card-body">
-  <div>
-    <input type="text" name="teamname">
-    <p>Team Name</p>
-    <input type="text" name="teamcoach">
-    <p>Team Coach</p>
-    <input type="text" name="region">
-    <p>Region</p>
-    <input style="float: right; color:white" type="file" name="teamlogo"  multiple>
-    <p style="margin-bottom:30px;">Team Logo</p>
-  </div>
-
-
-    <p>Select the games you will compete in: </p>
-<div style="margin-right: 20%;float: right;" class="form-check">
-  <input class="form-check-input" type="checkbox" value="starcraft" name="starcraft" >
-  <label class="form-check-label" for="flexCheckDefault">
-    StarCraft II
-</label>
-</div>
-<div style="margin-left: 20px;" class="form-check">
-  <input class="form-check-input" type="checkbox" value="leagueoflegends" name="leagueoflegends">
-  <label  class="form-check-label" for="flexCheckDefault">
-    League of Legends
-  </label>
-</div>
-<div style="margin-right: 20%;float: right;" class="form-check">
-  <input class="form-check-input" type="checkbox" value="overwatch" name="overwatch">
-  <label class="form-check-label" for="flexCheckDefault">
-    Overwatch
-  </label>
-</div>
-<div style="margin-left: 20px;" class="form-check">
-  <input class="form-check-input" type="checkbox" value="callofduty" name="callofduty">
-  <label class="form-check-label" for="flexCheckDefault">
-    Call of Duty
-  </label>
-</div>
-<div style="margin-left: 20px;margin-bottom:30px;" class="form-check">
-  <input class="form-check-input" type="checkbox" value="apexlegends" name="apexlegends">
-  <label class="form-check-label" for="flexCheckDefault">
-    Apex Legends
-  </label>
-</div>
-
-
-<p style="margin-top: 20px;">Players Name</p>
-<input type="text" name="player1">
-<p>Player 1</p>
-<input type="text" name="player2">
-<p>Player 2</p>
-<input type="text" name="player3">
-<p>Player 3</p>
-<input type="text" name="player4">
-<p>Player 4</p>
-<input type="text" name="player5">
-<p>Player 5</p>
-
-
-<div>
-<p style="margin-top: 20px;">Any Comments</p>
-  <textarea class="form-control" name="comments"></textarea>
-  <label for="floatingTextarea"></label>
-</div>
-
-<div class="text-center">
-  <button style="width:30%;font-weight: bolder;" type="submit" class="btn btn-primary btn-lg">Submit</button>
-</div><!-- Button -->
-  </form>
-</div>
-</div>
-
-    <script src="code.js"></script>
-
-
-    
-  </body>
 </html>
