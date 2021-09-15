@@ -8,7 +8,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
     <!-- Favicons -->
-    <link href="assets/img/database.png" rel="icon">
+    <link href="assets/img/icon.png" rel="icon">
     <!-- Title -->
     <title>Reg sheet</title>
     <!-- Bootstrap Html & CSS -->
