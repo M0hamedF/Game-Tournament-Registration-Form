@@ -75,42 +75,45 @@
                     <div class="size"><input type="text" class="form-control" name="player-5" required></div>
                 </div>
                 <!-- Games -->
-                <div class="box">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="league-of-legends" value="in">
-                        <label class="form-check-label" for="league-of-legends">
-                            League of Legends
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="call-of-duty" value="in">
-                        <label class="form-check-label" for="call-of-duty">
-                            Call of Duty
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="overwatch" value="in">
-                        <label class="form-check-label" for="overwatch">
-                            Overwatch
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="dota-2" value="in">
-                        <label class="form-check-label" for="Dota-2">
-                            Dota 2
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="valorant" value="in">
-                        <label class="form-check-label" for="valorant">
-                            Valorant
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="heroes-of-the-storm" value="in">
-                        <label class="form-check-label" for="heroes-of-the-storm">
-                            Heroes of the Storm
-                        </label>
+                  <div>
+                    <label>Select the games you will compete in: </label>
+                    <div class="box">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="league-of-legends" value="in">
+                            <label class="form-check-label" for="league-of-legends">
+                                League of Legends
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="call-of-duty" value="in">
+                            <label class="form-check-label" for="call-of-duty">
+                                Call of Duty
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="overwatch" value="in">
+                            <label class="form-check-label" for="overwatch">
+                                Overwatch
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="dota-2" value="in">
+                            <label class="form-check-label" for="Dota-2">
+                                Dota 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="valorant" value="in">
+                            <label class="form-check-label" for="valorant">
+                                Valorant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="heroes-of-the-storm" value="in">
+                            <label class="form-check-label" for="heroes-of-the-storm">
+                                Heroes of the Storm
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <!-- Comments -->
